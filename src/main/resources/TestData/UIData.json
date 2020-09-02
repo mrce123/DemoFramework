@@ -1,0 +1,10 @@
+[
+	{
+	"id":"firstCity",
+	"toCity":"Bengaluru, India",
+	"fromCity":"Delhi, India",
+	"way":"RoundTrip",
+	"departDate":"Sep 14",
+	"returnDate":"Sep 16"
+	}
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">DemoFramework</th></tr>
+<tr><td><a href="#t0">testngTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">30,843</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DemoFramework</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testngTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">uiScenarios.TestScenarios</td><td><a href="#m0">Test001_searchForLocation</a></td><td rowspan="1">1598764944627</td><td rowspan="1">19375</td></tr><tr class="failedeven"><td><a href="#m1">Test002_apiCreateEmployee</a></td><td rowspan="1">1598764964033</td><td rowspan="1">6375</td></tr><tr class="failedeven"><td><a href="#m2">Test003_apiGetValidateEmployeeName</a></td><td rowspan="1">1598764970424</td><td rowspan="1">3281</td></tr><tr class="failedeven"><td><a href="#m3">Test004_apiUpdateNameAgeOfEmployee</a></td><td rowspan="1">1598764973721</td><td rowspan="1">1703</td></tr></tbody>
+</table>
+<h2>testngTest</h2><h3 id="m0">uiScenarios.TestScenarios#Test001_searchForLocation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2&apos;]/div[2]/div/a/span
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-JIPKO7F&apos;, ip: &apos;172.22.160.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 4308, moz:profile: C:\Users\Manish\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3453a75d-ba09-4a3b-967a-f6cdfe12aa02
+*** Element info: {Using=xpath, value=//div[@class=&apos;ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2&apos;]/div[2]/div/a/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at generalUtils.UIActions.selectDate(UIActions.java:85)
+	at generalUtils.UIActions.enterDate(UIActions.java:33)
+	at uiPageObjects.AutomationObjects.enterInformation(AutomationObjects.java:52)
+	at uiScenarios.TestScenarios.Test001_searchForLocation(TestScenarios.java:29)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">uiScenarios.TestScenarios#Test002_apiCreateEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [405]
+	at uiScenarios.TestScenarios.Test002_apiCreateEmployee(TestScenarios.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">uiScenarios.TestScenarios#Test003_apiGetValidateEmployeeName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect to find [Bangalore] but found [null]
+	at uiScenarios.TestScenarios.Test003_apiGetValidateEmployeeName(TestScenarios.java:48)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">uiScenarios.TestScenarios#Test004_apiUpdateNameAgeOfEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect to find [] but found [null]
+	at uiScenarios.TestScenarios.Test004_apiUpdateNameAgeOfEmployee(TestScenarios.java:59)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
